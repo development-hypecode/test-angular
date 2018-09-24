@@ -1,0 +1,35 @@
+
+<div class="container">
+
+  <!-- liste des films -->
+  <div class="row">
+    <h1 class="col-12">
+      Movies List
+    </h1>
+
+
+    <div class="col-2" *ngFor="let movie of moviesList">
+      <div class="movie">
+        {{ movie.attributes.title }}
+      </div>
+    </div>
+  </div>
+
+  <!-- partie navigation -->
+
+
+
+  <!-- films séléctionnés -->
+  <div class="row">
+    <h1 class="col-12">
+      Movies Selected
+    </h1>
+    <div class="col-12 selected-movie">
+    </div>
+  </div>
+
+
+
+</div>
+
+
