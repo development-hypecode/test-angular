@@ -1,6 +1,6 @@
 # Test Angular
 
-#### Instruction
+#### Instructions
 
 Le projet est inialisé avec juste la récupération d'une liste de films via le service 
 `MoviesService`. Il n'y actuellement que l'affichage 20 premiers titres films 
@@ -32,8 +32,13 @@ liste principale.
 
 #### Les buts de ce test
 
-Le but de l'exercice est principalement d'avoir une idée des compétences du candidat 
-et d'avoir un échange sur les choix effectués lors de l'entretien technique.
+Le but de l'exercice est principalement d'évaluer les compétences en Angular du candidat 
+et d'avoir un échange sur les choix effectués et/ou difficultés lors de l'entretien technique.
+
+
+#### Livraison
+
+Il sera demandé de créer un fork de ce projet et de faire un pull request des modifications effectuées avant la venu du candidat en entretien. 
 
 
 
@@ -41,7 +46,7 @@ et d'avoir un échange sur les choix effectués lors de l'entretien technique.
 
 
 
-## Technical Info
+## Project Technical Infos
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
