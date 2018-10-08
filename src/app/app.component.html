@@ -8,7 +8,7 @@
     </h1>
 
 
-    <div class="col-2" *ngFor="let movie of moviesList">
+    <div class="col-2 toggle-movie" *ngFor="let movie of moviesList" (mouseenter) = "toggle=true;" (mouseleave)="toggle=false;" >
       <div class="movie">
         {{ movie.attributes.title }}
       </div>
@@ -31,5 +31,3 @@
 
 
 </div>
-
-

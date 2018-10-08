@@ -5,3 +5,6 @@
     margin-bottom: 10px;
     text-align: center;
 }
+.toggle-movie:hover +.display-movie{
+  display: none;
+}

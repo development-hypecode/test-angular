@@ -1,0 +1,17 @@
+<div class="container">
+
+  <!-- les détails d'un film -->
+  <div class="row">
+    <h1 class="col-12">
+      Films Details
+    </h1>
+
+
+    <div class="col-2">
+      <div class="movie">
+        {{ movie.thumbnails.small }}
+        {{ movie.attributes.title }}
+        {{ movie.attributes.duration | date: "HH:mm:ss" }}
+      </div>
+    </div>
+  </div>
