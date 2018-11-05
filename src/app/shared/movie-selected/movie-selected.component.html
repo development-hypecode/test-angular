@@ -1,0 +1,9 @@
+<div class="movie" (click)="removeThisMovie(movie)" (mouseenter)="showInfos = true"  (mouseleave) ="showInfos = false">
+	<img class="movie-image"  [src]="movie.thumbnails.medium" [alt]="movie.attributes.title">
+	<span class="movie-text ">{{ movie.attributes.title }}</span>
+	<div class="infos" *ngIf="showInfos">
+		<span>Actors: {{ movie.attributes.actors }}</span><br>
+		<span>Director: {{ movie.attributes.director }}</span><br>
+		<span>Year: {{ movie.attributes.year }}</span>
+	</div>
+</div>

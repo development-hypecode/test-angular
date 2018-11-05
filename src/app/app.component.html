@@ -8,10 +8,8 @@
     </h1>
 
 
-    <div class="col-2" *ngFor="let movie of moviesList">
-      <div class="movie">
-        {{ movie.attributes.title }}
-      </div>
+    <div class="col-2 p-2 m-2" *ngFor="let movie of moviesList">
+      <app-movie [movie]="movie"></app-movie>
     </div>
   </div>
 
@@ -20,12 +18,18 @@
 
 
   <!-- films séléctionnés -->
-  <div class="row">
+  <div class="row" *ngIf="selection.alreadyOneSelected">
     <h1 class="col-12">
       Movies Selected
     </h1>
-    <div class="col-12 selected-movie">
+    <div class="col-2 p-2 m-2" *ngFor="let movieSelected of selection.getMovies()">
+      <app-movie-selected [movie]="movieSelected"></app-movie-selected>
     </div>
+  </div>
+
+  <div class="row">
+    <button [disabled]="(page > 1) ? false : true" (click)="clickButtonNextPrevious()" type="button" class="btn btn-dark col-auto">Precedent</button>
+    <button (click)="clickButtonNextPrevious(1)" type="button" class="btn btn-secondary col-auto ml-auto">Suivant</button>
   </div>
 
 
